@@ -12,14 +12,14 @@ To train a Deep Learning CNN model which combines images of the same scene with 
 HDR image overcomes exposure limitations, capturing a more detailed and visually balanced image.
 
 ### 📂 **Dataset Details**: 
-* **Total Images**: **400** photos captured using a mobile camera. <br>
-* **Format**: All images are in **.jpg** format to maintain uniformity.
+- **Total Images**: **400** photos captured using a mobile camera. <br>
+- **Format**: All images are in **.jpg** format to maintain uniformity.
 - **Synthetic Modification**:
   - **Underexposed images** → Darker with fewer pixel details.
   - **Overexposed images** → Brighter with increased pixel values.
-  - Both are generated from the same Ground Truth images using **Python**
-* **Resolution**: All images are uniformly resized to **384 × 384 pixels**.
-* **Data Composition**: Ground Truth Images, Synthetically Modified Underexposed Images and Synthetically Modified Overexposed Images.
+  - Both are generated from the same Ground Truth images using **Python**.
+- **Resolution**: All images are uniformly resized to **384 × 384 pixels**.
+- **Data Composition**: Ground Truth Images, Synthetically Modified Underexposed Images and Synthetically Modified Overexposed Images.
 
 ### 🧮 **Loss Functions Used**:
 A combination of: **RGB-L1 Loss**, **Luminance-L1 Loss**, **Multi-Scale Structural Similarity Index Measure (MS-SSIM) Loss**, **Color Preservation (Chroma) Loss** and **Soft Histogram Matching Loss**.
